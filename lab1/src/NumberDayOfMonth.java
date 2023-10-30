@@ -9,6 +9,7 @@ public class NumberDayOfMonth {
 				 "Số ngày trong tháng là: " + day, "Kết quả", 
 				 JOptionPane.INFORMATION_MESSAGE);
 		 
+		 JOptionPane.showMessageDialog(null, "Số ngày trong tháng là: " + day, "Kết quả", JOptionPane.INFORMATION_MESSAGE);
 		System.exit(0);
 	}
 	//Input year
@@ -28,6 +29,7 @@ public class NumberDayOfMonth {
                 JOptionPane.showMessageDialog(null, 
                 		"Invalid year!", "Error", 
                 		JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Invalid year!", "Error", JOptionPane.ERROR_MESSAGE);
             }
 	    }
 	    return year;
@@ -111,6 +113,7 @@ public class NumberDayOfMonth {
 		    default:
 		    	JOptionPane.showMessageDialog(null, 
 		    			"Invalid month!", "Error", JOptionPane.ERROR_MESSAGE);
+		    	JOptionPane.showMessageDialog(null, "Invalid month!", "Error", JOptionPane.ERROR_MESSAGE);
 		        break;
 		    }
 	    } while (month>12||month<1);

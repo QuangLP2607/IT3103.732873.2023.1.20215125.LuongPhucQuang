@@ -32,6 +32,15 @@ public class CaculateTwoNumbers {
                 result = num1 / num2;
                 System.out.printf("%.2f / %.2f = %.2f\n",num1,num2,result);
             }      
+        if (num2 == 0) 
+        {
+            System.out.println("Cannot divide by zero");
+        } else 
+            {
+                result = num1 / num2;
+                System.out.printf("%.2f / %.2f = %.2f\n",num1,num2,result);
+            }
+        
         System.exit(0);
     }
 }
