@@ -1,3 +1,4 @@
+// Luong Phuc Quang - 20215125
 package lab2;
 
 public class Cart {
@@ -20,6 +21,20 @@ public class Cart {
 			System.out.println("Giỏ hàng đầy."); 
 		}
 	}
+	// Overloaded method 1
+    public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
+        for (DigitalVideoDisc dvd : dvdList) {
+            addDigitalVideoDisc(dvd);
+        }
+    }
+
+    // Overloaded method 2
+    public void addDigitalVideoDisc(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2) {
+        addDigitalVideoDisc(dvd1);
+        addDigitalVideoDisc(dvd2);
+    }
+
+	
 	// method remove the item passed by argument from the list
 	public void removeDigitalVideoDisc(DigitalVideoDisc disc) {
         for (int i = 0; i < qtyOrdered; i++) { 
