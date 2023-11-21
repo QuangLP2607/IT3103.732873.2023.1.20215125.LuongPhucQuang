@@ -19,7 +19,7 @@ public class DigitalVideoDisc {
 	public String getDirector() {
 		return director;
 	}
-	public int getLenght() {
+	public int getLength() {
 		return length;
 	}
 	public float getCost() {
