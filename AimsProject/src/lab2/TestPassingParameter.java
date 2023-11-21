@@ -28,5 +28,10 @@ public class TestPassingParameter {
 		dvd = new DigitalVideoDisc(oldTitle);
 	}
 	
-	
+	//swap() method that can correctly swap the two objects
+	public static void swapCorrectly(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2 ) {
+	    String tmp = dvd1.getTitle();
+	    dvd1.setTitle(dvd2.getTitle());
+	    dvd2.setTitle(tmp);
+	    }	
 }
