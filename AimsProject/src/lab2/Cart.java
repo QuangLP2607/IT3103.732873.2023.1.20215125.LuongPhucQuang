@@ -71,4 +71,19 @@ public class Cart {
 			}
         }
 	}
+	
+	// print the list of ordered items of a cart, the price of each item, and the total price
+		public void print()
+	    {   
+	        int i = 1;
+	        System.out.println("**********************CART**********************");
+	        for (DigitalVideoDisc disc : itemsOrdered) {
+	        	if (disc != null) {
+	        		System.out.println(i++ + ".DVD - " + disc.toString());
+	        	}
+	        }
+	        System.out.print("Total Cost: ");
+	        System.out.println(totalCost());
+	        System.out.println("*************************************************");
+	    }
 }

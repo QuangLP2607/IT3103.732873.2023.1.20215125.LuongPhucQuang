@@ -21,7 +21,7 @@ public class DigitalVideoDisc {
 	public String getDirector() {
 		return director;
 	}
-	public int getLenght() {
+	public int getLength() {
 		return length;
 	}
 	public float getCost() {
@@ -63,6 +63,13 @@ public class DigitalVideoDisc {
         this.cost = cost;
         this.id = ++nbDigitalVideoDiscs;
     }
+    
+    public String toString() 
+	{
+		String dvd;
+		dvd = "[" + getTitle() + "]-[" + getCategory() + "]-[" + getDirector() + "]-["  +getLength() + "]: " + getCost() + "$";
+		return dvd;
+	}
 }
 
 
