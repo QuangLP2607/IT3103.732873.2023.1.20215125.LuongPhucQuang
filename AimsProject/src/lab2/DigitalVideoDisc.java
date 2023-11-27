@@ -70,6 +70,11 @@ public class DigitalVideoDisc {
 		dvd = "[" + getTitle() + "]-[" + getCategory() + "]-[" + getDirector() + "]-["  +getLength() + "]: " + getCost() + "$";
 		return dvd;
 	}
+    
+    public boolean isMatch(String title)
+	{  
+    	return this.title.equalsIgnoreCase(title);
+	}
 }
 
 

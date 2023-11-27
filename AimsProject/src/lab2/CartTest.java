@@ -18,5 +18,12 @@ public class CartTest {
 		
 		//Test the print method
 		cart.print();
+		
+		//To-do: Test the search methods here
+		System.out.println("\nTest search methods:");
+		 cart.searchById(1);
+		 cart.searchById(4);
+		 cart.searchByTitle("Star Wars");
+		 cart.searchByTitle("Ala");	
 	}
 }
