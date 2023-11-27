@@ -1,5 +1,4 @@
 INDEX VERSION 1.134+C:\Users\HP\IT3103.732873.2023.1.20215125.LuongPhucQuang\.metadata\.plugins\org.eclipse.jdt.core
-87111012.index
 2315386619.index
 1321699887.index
 1865797976.index
