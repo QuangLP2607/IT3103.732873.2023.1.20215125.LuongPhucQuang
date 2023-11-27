@@ -21,7 +21,31 @@ public class Aims {
 	    //remove dvd3 
 	    anOrder.removeDigitalVideoDisc(dvd3);
 	    //show cart
-    	anOrder.showCart();
+anOrder.showCart();
+    	
+    	// create a list of DVDs
+    	DigitalVideoDisc[] dvdList = new DigitalVideoDisc[3];
+    	dvdList[0]=dvd3;
+    	dvdList[1]=dvd1;
+    	dvdList[2]=dvd3;
+    	 	
+//test Overloaded method addDigitalVideoDisc
+    	//method add a list of DVDs 	
+    	System.out.println("\nTest overloaded method add a list of DVDs:");
+    	anOrder.showCart();							//show cart
+    	anOrder.addDigitalVideoDisc(dvdList);		//add DVDs
+    	anOrder.showCart();							//show cart
+    	
+    	//method add two DVDs
+    	System.out.println("\nTest overloaded method add two DVD:");
+    	anOrder.addDigitalVideoDisc(dvd1,dvd1);		//add DVDs
+    	anOrder.showCart();							//show cart
+    	
+    	//Check the allocation of ID for DVD
+    	System.out.println("\nCheck the allocation of ID for DVD:");
+    	System.out.println("dvd 1 id: " + dvd1.getId());
+	    System.out.println("dvd 2 id: " + dvd2.getId());
 	}
 }
+
 

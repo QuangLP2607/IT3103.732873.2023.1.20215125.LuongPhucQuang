@@ -14,9 +14,21 @@ public class TestPassingParameter {
 		
 		changeTitle(jungleDVD, cinderellaDVD.getTitle()); 
 		System.out.println("jungle dvd title: " + jungleDVD.getTitle());
+		
+		//Revert the name of jungleDVD
+		changeTitle(jungleDVD, "Jungle");
+    	
+		//Test method can correctly swap
+		swapCorrectly(jungleDVD,cinderellaDVD);
+		
+		System.out.println("\n__________ Correctly swap __________");
+    	System.out.println("Jungle dvd title: " + jungleDVD.getTitle());
+    	System.out.println("Cinderella dvd title: " + cinderellaDVD.getTitle());
+
 	}
 	
 	public static void swap (Object o1, Object o2) {
+
 		Object tmp= o1;
 		o1 = o2;
 		o2 = tmp;
